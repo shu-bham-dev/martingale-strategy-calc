@@ -55,6 +55,7 @@ function App() {
         <table>
           <thead>
             <tr>
+              <th>No. of loss</th>
               <th>Total</th>
               <th>Bet</th>
               <th>Value</th>
@@ -64,6 +65,7 @@ function App() {
           <tbody>
             {calData.map((row, index) => (
               <tr key={index}>
+                <td>{index + 1}</td>
                 <td>{row.total}</td>
                 <td>{row.ini}</td>
                 <td>{row.xIni}</td>
