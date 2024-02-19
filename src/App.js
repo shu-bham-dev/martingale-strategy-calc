@@ -20,11 +20,11 @@ function App() {
     let total = x;
     let ini = initialAmount;
     let rows = [];
-    for (let i = 0; i < 100000000; i++) {
+    for (let i = 0; i < 100000; i++) {
       const xIni = x - ini;
       const remainingValue = totalAmount - xIni;
       rows.push({ total, ini, xIni, remainingValue });
-      if (xIni < 0) break;
+      if (xIni <= 0) break;
       total = x - ini;
       ini *= 2;
       x -= ini;
