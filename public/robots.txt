@@ -1,3 +1,30 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+# Sitemap location
+Sitemap: https://martingale-strategy-calc.vercel.app/sitemap.xml
+
+# Allow all crawlers to index all pages
+Allow: /
+
+# Crawl delay (be respectful to the server)
+Crawl-delay: 1
+
+# Specific directives for search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Important pages to crawl
+Allow: /calculator
+Allow: /strategy-guide
+Allow: /simulation
+Allow: /risk-analysis
+Allow: /faq
+Allow: /blog/

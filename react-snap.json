@@ -1,0 +1,35 @@
+{
+  "source": "build",
+  "destination": "build",
+  "include": [
+    "/",
+    "/calculator",
+    "/strategy-guide",
+    "/faq",
+    "/simulation",
+    "/risk-analysis"
+  ],
+  "crawl": true,
+  "inlineCss": true,
+  "minifyHtml": {
+    "collapseWhitespace": true,
+    "removeComments": true,
+    "removeRedundantAttributes": true,
+    "removeScriptTypeAttributes": true,
+    "removeStyleLinkTypeAttributes": true,
+    "useShortDoctype": true
+  },
+  "puppeteerArgs": [
+    "--no-sandbox",
+    "--disable-setuid-sandbox"
+  ],
+  "skipThirdPartyRequests": true,
+  "concurrency": 4,
+  "userAgent": "react-snap",
+  "cache": true,
+  "publicPath": "/",
+  "preconnectThirdParty": false,
+  "waitFor": 1000,
+  "puppeteerIgnoreHTTPSErrors": true,
+  "puppeteerExecutablePath": null
+}
