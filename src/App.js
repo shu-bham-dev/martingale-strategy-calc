@@ -195,7 +195,7 @@ function App() {
       {/* Schema Markup */}
       <SchemaMarkup type={getSchemaType()} />
       
-      <Toaster
+      {/* <Toaster
         position="top-right"
         toastOptions={{
           duration: 4000,
@@ -218,17 +218,19 @@ function App() {
             },
           },
         }}
-      />
+      /> */}
 
       {/* Header */}
       <header className="app-header">
         <div className="header-content">
           <h1 className="header-title">
             <Calculator size={32} />
-            Martingale Calculator – Free Martingale Strategy Simulator
+            <span className="header-title-text">
+              Martingale Calculator – Free Martingale Strategy Simulator
+            </span>
           </h1>
           <p className="header-subtitle">
-            Use our advanced Martingale betting calculator to test strategies, manage bankroll, and understand the risks of progressive betting systems. Our Martingale system calculator provides comprehensive analysis and simulations.
+            Use our advanced Martingale betting calculator to test strategies, manage bankroll, and understand the risks of progressive betting systems.
           </p>
         </div>
       </header>
@@ -241,6 +243,7 @@ function App() {
               src={`${process.env.PUBLIC_URL}/martigale strategy calculater.webp`}
               alt="Martingale Strategy Calculator - Stake Casino"
               className="top-promotional-image"
+              loading="lazy"
             />
           </a>
           <div className="promotional-text-content">
@@ -382,6 +385,7 @@ function App() {
                     src={`${process.env.PUBLIC_URL}/martigale strategy calculater.webp`}
                     alt="Martingale Strategy Calculator - Stake Casino"
                     className="promotional-image"
+                    loading="lazy"
                   />
                 </a>
                 <p className="promotional-text">
